@@ -1,0 +1,152 @@
+/* === about section styles === */
+.about {
+  width: 100%;
+  height: auto;
+  padding: 50px 10vw;
+}
+.indicator {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  width: 45px;
+}
+
+.about-image {
+  width: 400px;
+  /* height: 300px; */
+  border-radius: 10px 50%;
+  background: rgb(201, 180, 184);
+}
+
+.about-me-container {
+  margin: 150px 0 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 50px;
+}
+.left-col,
+.right-col {
+  position: relative;
+}
+.left-col::before {
+  content: "Yes, I can help!";
+  text-transform: capitalize;
+  position: absolute;
+  right: -24px;
+  top: -13px;
+}
+.left-col::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 75px;
+  width: 88px;
+  height: 2px;
+  background: #fff;
+  transform-origin: right;
+  transform: rotate(-30deg);
+}
+.about-para {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 35px;
+  margin-bottom: 40px;
+}
+.skill-container {
+  position: relative;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.skill-card-html,
+.skill-card-css,
+.skill-card-scss,
+.skill-card-js,
+.skill-card-react,
+.skill-card-mtui,
+.skill-card-bootstrap,
+.skill-card-firebase {
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #464646;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.skill {
+  font-size: 2rem;
+  color: #464646;
+  line-height: 200px;
+}
+body {
+  --bgHTML: #f06529;
+  --bgCSS: #83cd29;
+  --bgSCSS: #326690;
+  --bgJS: #f7df1e;
+  --bgREACT: #5ed9fb;
+  --bgMTUI: #f06529;
+  --bgBTSTRAP: #f06790;
+  --bgFIREBASE: #ffa000;
+}
+.skill-card-html:hover {
+  background: var(--bgHTML);
+}
+.skill-card-css:hover {
+  background: var(--bgCSS);
+}
+.skill-card-scss:hover {
+  background: var(--bgSCSS);
+}
+.skill-card-js:hover {
+  background: var(--bgJS);
+}
+.skill-card-react:hover {
+  background: var(--bgREACT);
+}
+.skill-card-bootstrap:hover {
+  background: var(--bgBTSTRAP);
+}
+.skill-card-firebase:hover {
+  background: var(--bgFIREBASE);
+}
+.skill-card-mtui:hover {
+  background: var(--bgMTUI);
+}
+.skill-card-html:hover .skill,
+.skill-card-css:hover .skill,
+.skill-card-scss:hover .skill,
+.skill-card-js:hover .skill,
+.skill-card-bootstrap:hover .skill,
+.skill-card-firebase:hover .skill,
+.skill-card-mtui:hover .skill,
+.skill-card-react:hover .skill {
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .about-me-container {
+    grid-template-columns: 45% 50%;
+    grid-gap: 80px;
+  }
+}
+@media (max-width: 996px) {
+  .about-me-container {
+    grid-template-columns: 1fr;
+  }
+  .indicator {
+    width: 30px;
+  }
+  .left-col {
+    margin: auto;
+    width: 50%;
+    min-width: 320px;
+  }
+  .skill-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .right-col {
+    text-align: center;
+  }
+}

@@ -1,0 +1,130 @@
+.homecontent {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  height: auto;
+  margin-top: 10px;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1d1d1d;
+  color: #fff;
+}
+.hero-content {
+  width: 50%;
+}
+.hero-heading {
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.highlight {
+  color: #ff3559;
+}
+.profession {
+  width: fit-content;
+  display: block;
+  margin: 10px 0 20px;
+  margin-left: auto;
+  text-transform: capitalize;
+  position: relative;
+  padding: 10px 20px;
+  color: #1d1d1d;
+  z-index: 2;
+}
+.profession::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e3e3e3;
+  z-index: -1;
+  transform: skewX(10deg);
+}
+.profession::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 100px;
+  height: 2px;
+  background: #e3e3e3;
+  z-index: -1;
+}
+.info {
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: #ff3559;
+  color: #fff;
+  text-transform: capitalize;
+  border: none;
+}
+.profile-Image {
+  width: 330px;
+  opacity: 0.9;
+  border-radius: 50% 50% 20px 50%;
+}
+/* ==tablet view == */
+@media (max-width: 996px) {
+  html {
+    font-size: 14px;
+  }
+  .homecontent {
+    flex-direction: column-reverse;
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+  .profile-Image {
+    width: 250px;
+    margin: 40px;
+  }
+  .hero-content {
+    width: 70%;
+    min-width: 350px;
+    text-align: center;
+  }
+  .homecontent .title {
+    width: 50%;
+    margin-top: 0;
+    text-align: left;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 411px) {
+  .profile-Image {
+    width: 200px;
+  }
+  .hero-heading {
+    font-size: 4rem;
+  }
+  .profession {
+    left: -65px;
+  }
+  .info {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 280px) {
+  .profile-Image {
+    width: 200px;
+  }
+  .profession {
+    left: -55px;
+  }
+  .hero-heading {
+    font-size: 3rem;
+  }
+  .info {
+    text-align: center;
+    padding: 0 70px;
+  }
+}
