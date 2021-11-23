@@ -10,34 +10,36 @@ const Works = () => {
 
             <ul className="project-list">
                 <li>
-                    <a href="">
-                        <img src={`${process.env.PUBLIC_URL}/responsiveweb.png`} />
+                    <div className="title-card">
+                    <img src={`${process.env.PUBLIC_URL}/responsiveweb.png`} />
                     <div className="title">
-                        <h3>ZuriTrainig/hng/I4G</h3>
-                        Responsive site..A project done in fullfilment of zuri trainning task.
+                    <h3>Fully responsive static website</h3>
+                    <a href="">Check it out</a>
                     </div>
-                    </a>
+                    </div>
+                    
                    
                 </li>
                 <li>
-                    <a href="">
-                        <img src={`${process.env.PUBLIC_URL}/responsiveweb.png`} />
-                   <div className="title">
-                        <h3>Fully responsive static website</h3>
-                        <p>Check it!</p>
+                      
+                  <div className="title-card">
+                    <img src={`${process.env.PUBLIC_URL}/responsiveweb.png`} />
+                    <div className="title">
+                    <h3>Fully responsive static website</h3>
+                    <a href="">Check it out</a>
                     </div>
-                    </a>
+                    </div>  
                    
                 </li>
                 <li>
-                    <a href="">
-                        <img src={`${process.env.PUBLIC_URL}/techadvise.png`} />
-                      <div className="title">
-                        <h3>Localstorage project</h3>
-                    
+                
+                    <div className="title-card">
+                    <img src={`${process.env.PUBLIC_URL}/techadvise.png`} />
+                    <div className="title">
+                    <h3>Localstorage project</h3>
+                    <a href="">Check it out</a>
                     </div>
-                    </a>
-                    
+                    </div>
                 </li>
             </ul>
         </div>
